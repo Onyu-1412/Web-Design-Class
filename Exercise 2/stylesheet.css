@@ -1,0 +1,53 @@
+body {
+    background: rgb(227, 227, 227);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#header {
+    margin: 30px 0 10px 15px;
+    color: rgb(255, 185, 251);
+    padding: 25px;
+    background-color: rgb(20, 89, 149);
+    font-size: 75px;
+}
+
+#author {
+    font-size: 23px;
+}
+
+.italics {
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.principle {
+    margin: 30px 0 10px 15px;
+    color:rgb(20, 89, 149);
+    font-size: 50px;
+}
+
+.details {
+    margin: 5px 0 20px 15px;
+    padding: 10px 0 0 0;
+    color: rgb(15, 15, 83);
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+.img {
+    margin: 5px 0 20px 15px;
+    width: 600px;
+    height: auto;
+}
+
+a {
+    color: rgb(20, 89, 149);
+    margin: 0 0 30px 15px;
+    font-family: Georgia, serif;
+}
+
+a:visited {
+    color: rgb(141, 102, 139);
+    margin: 0 0 30px 15px;
+    font-family: Georgia, serif;
+}
