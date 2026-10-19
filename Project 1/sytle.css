@@ -132,7 +132,6 @@ header:hover {
     font-family: "Libre Caslon Condensed", serif;
     font-weight: 400;
     cursor: pointer;
-    z-index: 1000;
 }
 
 .MENU:hover .menu-dropdown {
