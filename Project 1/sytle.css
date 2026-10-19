@@ -316,13 +316,17 @@ header:hover {
     grid-row: span 5 / span 5;
     grid-column-start: 3;
     grid-row-start: 1;
+    min-width: 0;
+    position: relative;
 }
 
 .storyimage img {
-    display: block;
+    position: absolute; /* prevents its natural size from making the section taller */
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* fills the image box while preserving the photo’s proportions, cropping where necessary */
+    height: 100%; /*fill the image container */
+    object-fit: cover; /* preserves the pic's proportions by cropping it if needed */
     border-radius: 19px;
 }
 
