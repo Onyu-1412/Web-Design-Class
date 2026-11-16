@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.limelight-regular {
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pinyon-script-regular {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courier-prime-regular {
+  font-family: "Courier Prime", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-color: rgb(11, 0, 32);
+}
+
+.introbutton {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.introbutton a {
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-size: 14vw;
+    color: rgb(247, 214, 0);
+    text-decoration: none;
+    cursor: pointer;
+
+    text-shadow:
+        0 0 5px rgb(247, 214, 0);
+
+    transition: color 0.4s ease-in-out, 
+                text-shadow 0.4s ease-in-out;
+
+    animation: appear 5s ease 0s both,
+           intro-flicker 3s infinite;
+}
+
+.introbutton a:hover {
+    animation: none;
+    color: rgb(255, 247, 186);
+    text-shadow:
+        0 0 5px rgb(247, 214, 0),
+        0 0 12px rgb(247, 214, 0),
+        0 0 25px rgb(247, 214, 0);
+}
+
+@keyframes intro-flicker {
+    0%, 85%, 100% {
+        text-shadow:
+            0 0 4px rgb(247, 214, 0),
+            0 0 10px rgb(247, 214, 0),
+            0 0 20px rgb(247, 214, 0);
+    }
+
+    87%, 91% {
+        text-shadow: none;
+    }
+
+    89%, 93% {
+        text-shadow:
+            0 0 5px rgb(247, 214, 0),
+            0 0 15px rgb(247, 214, 0),
+            0 0 28px rgb(247, 214, 0);
+    }
+}
+
+@keyframes neon-flicker {
+    0%, 85%, 100% {
+        opacity: 1;
+        text-shadow:
+            0 0 5px rgb(247, 214, 0),
+            0 0 15px rgb(247, 214, 0),
+            0 0 30px rgb(247, 214, 0);
+    }
+
+    87%, 91% {
+        opacity: 0.7;
+        text-shadow: none;
+    }
+
+    89%, 93% {
+        opacity: 1;
+        text-shadow:
+            0 0 5px rgb(247, 214, 0),
+            0 0 20px rgb(247, 214, 0),
+            0 0 40px rgb(247, 214, 0);
+    }
+}
+
+@keyframes appear {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.introbutton span:nth-child(1)  { animation-delay: 0s; }
+.introbutton span:nth-child(2)  { animation-delay: 0.2s; }
+.introbutton span:nth-child(3)  { animation-delay: 0.4s; }
+.introbutton span:nth-child(4)  { animation-delay: 0.6s; }
+.introbutton span:nth-child(5)  { animation-delay: 0.8s; }
+.introbutton span:nth-child(6)  { animation-delay: 1s; }
+.introbutton span:nth-child(7)  { animation-delay: 1.2s; }
+.introbutton span:nth-child(8)  { animation-delay: 1.4s; }
+.introbutton span:nth-child(9)  { animation-delay: 1.6s; }
+.introbutton span:nth-child(10) { animation-delay: 1.8s; }
+.introbutton span:nth-child(11) { animation-delay: 2s; }
+.introbutton span:nth-child(12) { animation-delay: 2.2s; }
+.introbutton span:nth-child(13) { animation-delay: 2.4s; }
+.introbutton span:nth-child(14) { animation-delay: 2.6s; }
+.introbutton span:nth-child(15) { animation-delay: 2.8s; }
+.introbutton span:nth-child(16) { animation-delay: 3s; }
+
+.sebs, .piano, .latrain, .paris, .sebslast, .button2, .button3, .button4, .button5, .end {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itsover, .griffith1, .griffith3, .lastlookmia {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sebs, .latrain, .paris, .griffith1, .sebslast {
+    animation: appear 3s ease both;
+}
+
+.sebs img, .piano img, .sebslast img, .pianolast img, .lastlookmia img, .lastlookseb img {
+    width: 60%;
+    height: auto;
+}
+
+.followmelody {
+    width: 100%;
+    height: 300vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        to bottom,
+        rgb(11, 0, 32) 0%,
+        rgb(11, 0, 32) 50%,
+        rgb(6, 0, 17) 100%
+    );
+}
+
+.followmelody2 {
+    width: 100%;
+    height: 300vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        to bottom,
+        black 0%,
+        rgb(10, 13, 19) 50%,
+        rgb(20, 26, 38) 100%
+    );
+}
+
+.followmelody p, .followmelody2 p {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-size: 4vw;
+    color:rgb(255, 247, 186);
+    text-shadow:
+        0 0 8px rgb(205, 186, 255),
+        0 0 10px rgb(255, 247, 186);
+    text-align: center;
+
+    padding: 10px;
+}
+
+.itsover img, .latrain img, .zoo img, .walk img, .bedroom img, .cityofstars img, .paris img, .kitchen img, .mom img, .family img, .kidbday img, .griffith1 img, .griffith2 img, .griffith3 img, .griffith4 img {
+    width: 65%;
+    height: auto;
+}
+
+.itsover p, .griffith1 p, .griffith2 p, .griffith3 p, .griffith4 p {
+    flex: 1;
+    text-align: center;
+
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-size: 3.3vw;
+    color: rgb(112, 97, 158);
+    padding: 70px;
+}
+
+.button2 {
+    background-color: rgb(34, 14, 34);
+}
+
+.button2 a, .button3 a, .button4 a, .button5 a, .end a {
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-size: 3vw;
+    color: rgb(247, 214, 0);
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+
+    text-shadow:
+        0 0 5px rgb(247, 214, 0),
+        0 0 10px rgb(247, 214, 0);
+
+    transition: color 0.4s ease-in-out,
+                text-shadow 0.4s ease-in-out;
+
+    animation: neon-flicker 3s infinite;
+}
+
+.button2 a:hover, .button3 a:hover, .button4 a:hover, .button5 a:hover, .end a:hover {
+    color: rgb(255, 247, 186);
+    text-shadow:
+        0 0 10px rgb(247, 214, 0),
+        0 0 25px rgb(247, 214, 0),
+        0 0 50px rgb(247, 214, 0);
+}
+
+.zoo, .walk, .bedroom, .cityofstars, .kitchen, .mom, .family, .kidbday, .pianolast {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.griffith2, .griffith4, .lastlookseb {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.latrain img, .zoo img, .walk img, .bedroom img, .cityofstars img, .paris img, .kitchen img, .mom img, .family img, .kidbday img {
+    width: 65%;
+    height: auto;
+}
+
+.piano {
+    background: linear-gradient(
+        to bottom,
+        rgb(6, 0, 17) 0%,
+        rgb(3, 0, 8) 35%,
+        black 75%
+    );
+}
+
+.itsover {
+    background: linear-gradient(
+        to bottom,
+        rgb(20, 26, 38) 0%,
+        rgb(22, 24, 38) 20%,
+        rgb(27, 20, 38) 50%,
+        rgb(31, 16, 35) 75%,
+        rgb(34, 14, 34) 100%
+    );
+}
+
+.latrain {
+    background: linear-gradient(
+        to bottom,
+        rgb(34, 14, 34) 0%,
+        rgb(19, 16, 24) 30%,
+        rgb(10, 15, 18) 65%,
+        rgb(13, 24, 22) 100%
+    );
+}
+
+.zoo {
+    background: linear-gradient(
+        to bottom,
+        rgb(13, 24, 22) 0%,
+        rgb(18, 30, 22) 40%,
+        rgb(25, 36, 32) 70%,
+        rgb(26, 34, 53) 100%
+    );
+}
+
+.walk {
+    background: linear-gradient(
+        to bottom,
+        rgb(26, 34, 53) 0%,
+        rgb(29, 39, 68) 35%,
+        rgb(41, 43, 74) 65%,
+        rgb(47, 30, 58) 100%
+    );
+}
+
+.bedroom {
+    background: linear-gradient(
+        to bottom,
+        rgb(47, 30, 58) 0%,
+        rgb(69, 30, 61) 30%,
+        rgb(99, 32, 58) 65%,
+        rgb(84, 20, 40) 100%
+    );
+}
+
+.cityofstars {
+    background: linear-gradient(
+        to bottom,
+        rgb(84, 20, 40) 0%,
+        rgb(60, 27, 43) 25%,
+        rgb(33, 32, 35) 55%,
+        rgb(20, 34, 32) 75%,
+        rgb(12, 32, 27) 100%
+    );
+}
+
+.paris {
+    background: linear-gradient(
+        to bottom,
+        rgb(12, 32, 27) 0%,
+        rgb(11, 24, 29) 25%,
+        rgb(9, 17, 30) 60%,
+        rgb(7, 11, 19) 100%
+    );
+}
+
+.kitchen {
+    background: linear-gradient(
+        to bottom,
+        rgb(7, 11, 19) 0%,
+        rgb(13, 12, 16) 30%,
+        rgb(22, 18, 13) 70%,
+        rgb(24, 18, 12) 100%
+    );
+}
+
+.mom {
+    background: linear-gradient(
+        to bottom,
+        rgb(24, 18, 12) 0%,
+        rgb(17, 13, 10) 35%,
+        rgb(10, 8, 7) 70%,
+        rgb(6, 6, 6) 100%
+    );
+}
+
+.family {
+    background: linear-gradient(
+        to bottom,
+        rgb(6, 6, 6) 0%,
+        rgb(23, 20, 18) 30%,
+        rgb(51, 40, 32) 65%,
+        rgb(82, 63, 48) 100%
+    );
+}
+
+.kidbday {
+    background: linear-gradient(
+        to bottom,
+        rgb(82, 63, 48) 0%,
+        rgb(99, 80, 60) 35%,
+        rgb(115, 95, 72) 65%,
+        rgb(137, 115, 86) 100%
+    );
+}
+
+.sebslast {
+    background: linear-gradient(
+        to bottom,
+        rgb(11, 0, 32) 0%,
+        rgb(9, 0, 26) 50%,
+        rgb(6, 0, 17) 100%
+    );
+}
+
+.pianolast {
+    background: linear-gradient(
+        to bottom,
+        rgb(6, 0, 17) 0%,
+        rgb(3, 0, 9) 50%,
+        black 100%
+    );
+}
+
+.lastlookmia, .script, .lastlookseb, .end {
+    background-color: black;
+}
+
+
+.button3 {
+    background-color: rgb(12, 32, 27);
+}
+
+.button4 {
+    background-color: rgb(137, 115, 86);
+}
+
+.script {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.script p {
+    font-family: "Courier Prime", monospace;
+    font-size: 1.3vw;
+    font-weight: 400;
+    color: rgb(112, 97, 158);
+
+    text-align: center;
+    line-height: 2;
+    padding: 0 150px;
+}
+
+
+
+
